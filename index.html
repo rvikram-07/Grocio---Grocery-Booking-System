@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Grocio — Smart Grocery Shopping, Made Simple"><title>Grocio v2.0 | Smart Grocery Shopping</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
+</head><body><div id="site-header"></div>
+<main class="container">
+<section class="hero" aria-label="Offers">
+<button class="hero-arrow prev" id="hero-prev" data-testid="hero-prev" aria-label="Previous offer">‹</button>
+<div class="hero-content"><span class="eyebrow" id="hero-eyebrow">A little more fresh</span><h1 id="hero-title">Your everyday basket, made better.</h1><p id="hero-copy">Fresh picks, quick delivery, and prices that feel good.</p><a class="btn btn-dark" href="products.html" id="hero-cta" data-testid="hero-shop">Shop groceries <span>→</span></a><div class="hero-dots" id="hero-dots" aria-label="Choose offer"></div></div>
+<div class="hero-art" aria-hidden="true"><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><span class="hero-emoji">🥑</span><span class="floating fruit-a">🍊</span><span class="floating fruit-b">🥬</span><span class="floating fruit-c">🍓</span></div>
+<button class="hero-arrow next" id="hero-next" data-testid="hero-next" aria-label="Next offer">›</button>
+</section>
+<section class="benefits"><div>✓ <span><strong>₹0 handling fee</strong><small>Always on us</small></span></div><div>✓ <span><strong>₹0 delivery fee*</strong><small>On orders above ₹199</small></span></div><div>✓ <span><strong>No surprise fees</strong><small>Clear totals, every time</small></span></div><small class="terms">*T&C apply</small></section>
+<section class="section"><div class="section-heading"><div><p class="eyebrow">Find your favourites</p><h2>Shop by category</h2></div><a class="text-link" href="products.html">View all →</a></div><div class="category-grid" id="home-categories"></div></section>
+<section class="section"><div class="section-heading"><div><p class="eyebrow">Customer favourites</p><h2>Best sellers</h2></div><a class="text-link" href="products.html?sort=relevance">See all →</a></div><div class="horizontal-products" id="best-sellers"></div></section>
+<section class="deal-banner"><div><span class="eyebrow">A fresh little deal</span><h2>Good things don't wait.</h2><p>Explore today's picks before the clock runs out.</p><div class="countdown" id="deal-countdown">Ends in 04:00:00</div></div><a class="btn btn-light" href="products.html?tag=deal">Explore deals →</a><span class="deal-illustration" aria-hidden="true">🛍️</span></section>
+<section class="section"><div class="section-heading"><div><p class="eyebrow">Picked fresh</p><h2>Fresh today</h2></div><a class="text-link" href="products.html?category=fruits">Shop fresh →</a></div><div class="horizontal-products" id="fresh-today"></div></section>
+<section class="section"><div class="section-heading"><div><p class="eyebrow">Little prices, big smiles</p><h2>Deals of the day</h2></div><a class="text-link" href="products.html?tag=deal">All deals →</a></div><div class="horizontal-products" id="daily-deals"></div></section>
+</main><div id="site-footer"></div><div id="cart-drawer-root"></div><div id="toast-root" aria-live="polite"></div><script src="js/data.js"></script><script src="js/app.js"></script><script>Grocio.initHome();</script></body></html>

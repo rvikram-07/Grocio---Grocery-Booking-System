@@ -1,0 +1,2 @@
+Grocio v2.0
+Milestone 3: complete browse-to-order workflow with validated address, delivery slots, mock UPI/card/COD, order confirmation, history, reorder, responsive mobile navigation, and Selenium-ready test IDs.

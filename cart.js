@@ -1,0 +1,1 @@
+(() => {const G=window.Grocio;G.initCart()})();
